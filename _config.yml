@@ -1,4 +1,7 @@
 name: Matthew Boddewyn
 title: Home Page
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /writing/:year/:month/:day/:title
+collections:
+    drawings:
+        output: true
