@@ -1,0 +1,12 @@
+---
+layout: default
+title: Things I've made
+---
+<h1>{{ page.title }}</h1>
+<ul class="writings">
+  {% for work in site.drawings %}
+  <li>
+    <span>{{ work.date | date_to_string }}</span> - <a href="{{ work.url }}" title="{{ work.title }}">{{ work.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
